@@ -1,10 +1,15 @@
 import hagemanto from "./lib/index.js";
 
 export default [
-	{ ignores: ["node_modules", "lib/**/*.*", "eslint.config.js", "postinstall.js"] },
-	{ files: ["./src/**/*.ts"] },
+	{ ignores: ["node_modules", "lib/**/*.ts", "eslint.config.js"] },
 
 	...hagemanto.configs.recommended,
 
-	{ languageOptions: { parserOptions: { project: "./tsconfig.json" } } },
+	{
+		rules: {
+			"@typescript-eslint/explicit-module-boundary-types": "warn",
+			"@typescript-eslint/no-unsafe-assignment": "warn",
+		}
+	},
+	{ files: ["./lib/**/*.js"] },
 ]

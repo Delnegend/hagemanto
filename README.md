@@ -38,4 +38,4 @@ export default [
 
 ## Development
 
-This package runs against itself, run `pnpm build` to transpile the package and `pnpm lint` to lint plugin files.
+There's no build step, remember to run `pnpm ts` before commiting.
