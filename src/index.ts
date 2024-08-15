@@ -377,7 +377,7 @@ export default [
 		},
 	],
 
-	// global overrides
+	// miscellaneous
 	{
 		rules: {
 			indent: ["error", "tab"],
@@ -385,4 +385,4 @@ export default [
 			"hagemanto/no-instanceof": "error",
 		},
 	},
-]
+];

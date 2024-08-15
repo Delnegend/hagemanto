@@ -1,14 +1,7 @@
-// import type { Rule } from "eslint";
-// import type { Node } from "estree";
+import type { Rule } from "eslint";
+import type { Node } from "estree";
 
-// export const CaseBlocks: Rule.RuleModule = {
-/**
- * @type {import("eslint").Rule.RuleModule}
- */
-export const CaseBlocks = {
-	meta: {
-		fixable: "code",
-	},
+export const CaseBlocks: Rule.RuleModule = {
 	create(context) {
 		return {
 			SwitchCase(node) {
@@ -25,6 +18,8 @@ export const CaseBlocks = {
 					context.report({
 						node,
 						message: `Single-line case statements must not use code blocks.`,
+
+						// autofixing this is hard, so we're just not going to.
 					});
 				}
 
@@ -45,17 +40,15 @@ export const CaseBlocks = {
 			},
 		};
 	},
+	meta: {
+		fixable: "code",
+	},
 };
 
-// export const NoInstanceof: Rule.RuleModule = {
-/**
- * @type {import("eslint").Rule.RuleModule}
- */
-export const NoInstanceof = {
-	meta: {},
+export const NoInstanceof: Rule.RuleModule = {
 	create(context) {
 		return {
-			"[operator=instanceof]"(node) {
+			"[operator=instanceof]"(node: Node) {
 				context.report({
 					node,
 					message: `Do not use the \`instanceof\` operator. It has many issues with TypeScript, and does not work as expected across files or environments. See https://github.com/Microsoft/TypeScript/wiki/FAQ#why-doesnt-extending-built-ins-like-error-array-and-map-work.`,
@@ -63,4 +56,5 @@ export const NoInstanceof = {
 			},
 		};
 	},
+	meta: {},
 };

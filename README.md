@@ -38,4 +38,4 @@ export default [
 
 ## Development
 
-There's no build step, remember to run `pnpm ts` before commiting.
+This package uses itself as an eslint plugin, run `pnpm tsc` to generate the `lib` folder before `pnpm lint`.

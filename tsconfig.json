@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "lib": [
+            "ESNext",
+        ],
+        "declaration": true,
+        "strict": true,
+        "allowJs": false,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "outDir": "./lib",
+        "baseUrl": "src",
+        "typeRoots": [
+            "@types",
+            "node_modules/@types",
+        ]
+    },
+    "include": [
+        "src/**/*.ts",
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}
