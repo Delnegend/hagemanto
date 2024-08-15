@@ -1,10 +1,11 @@
 {
 	"name": "eslint-plugin-hagemanto",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"scripts": {
 		"build": "tsc && node postinstall.js",
-		"lint": "eslint --cache --fix"
+		"lint": "eslint --cache --fix",
+		"prepublish": "tsc && node postinstall.js"
 	},
 	"main": "lib/index.js",
 	"author": "Delnegend",
