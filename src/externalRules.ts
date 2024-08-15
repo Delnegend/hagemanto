@@ -318,6 +318,11 @@ parseInt("4helloworld") // 4`,
 
 	// stylistic-ts (migrated from typescript-eslint)
 	...[
+		{
+			plugins: {
+				"@stylistic/ts": stylisticTs,
+			},
+		},
 		stylisticTs.default.configs["all-flat"],
 		{
 			rules: {

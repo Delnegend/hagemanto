@@ -1,29 +1,32 @@
-import recommended from "./configs/recommended.js";
-import { CaseBlocks, NoInstanceof } from "./rules.js";
+import externalRules from "./externalRules.js";
+import { CaseBlocks, NoInstanceof } from "./internalRules.js";
 
-export default {
-	meta: {
+export default { // did you know that we can declare this however we want?
+	meta: {      // idk but this just to satisfy ESLint
 		name: "hagemanto",
-		version: "1.0.0",
+		version: "HAGEMANTO_VERSION",
 		docs: {
-			description: "A very opinionated ESLint config.",
+			description: "HAGEMANTO_DESCRIPTION",
 			category: "recommended",
 			recommended: true,
-			url: "https://github.com/Delnegend/hagemanto",
+			url: "HAGEMANTO_HOMEPAGE",
 		},
 	},
-	plugins: {
-		hagemanto: {
-			rules: {
-				"case-blocks": CaseBlocks,
-				"no-instanceof": NoInstanceof,
-			},
-		},
-	},
-	rules: {
-		recommended: [
-			...recommended,
+
+	configs: {                     // I name this however I want
+		recommended: [             // I name this however I want
 			{
+				plugins: {         // ESLint flat-config plugins declaration
+					hagemanto: {   // the config name, later to be used as `hagemanto/rule-name`
+						rules: {   // ESLint only requires a rules object to be a "plugin" object
+							"case-blocks": CaseBlocks,
+							"no-instanceof": NoInstanceof,
+						},
+					},
+				},
+			},
+			...externalRules, // pre-configured rules from other plugins
+			{ // pre-configured rules from this plugin
 				rules: {
 					"hagemanto/case-blocks": "error",
 					"hagemanto/no-instanceof": "error",
