@@ -31,7 +31,7 @@ import hagemanto from "eslint-plugin-hagemanto";
 
 export default [
     // ...
-	...hagemanto.configs.recommended,
+	...hagemanto,
     // ,,,
 ]
 ```

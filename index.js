@@ -2,11 +2,20 @@ import eslint from "@eslint/js";
 import stylisticTs from "@stylistic/eslint-plugin-ts";
 import prettier from "eslint-plugin-prettier/recommended";
 import tseslint from "typescript-eslint";
+import { CaseBlocks, NoInstanceof } from "./rules.js";
 
-/**
- * Contains all flat-config rules from other plugins.
- */
 export default [
+	{
+		plugins: {
+			hagemanto: {
+				rules: {
+					"case-blocks": CaseBlocks,
+					"no-instanceof": NoInstanceof,
+				},
+			},
+		},
+	},
+
 	// built-in
 	...[
 		eslint.configs.recommended,
@@ -117,14 +126,14 @@ export default [
 					{
 						name: "parseInt",
 						message: `Use Number() to convert strings to numbers. parseInt is very liberal with what it considers a number.
-Number("4f") // NaN
-parseInt("4helloworld") // 4`,
+	Number("4f") // NaN
+	parseInt("4helloworld") // 4`,
 					},
 					{
 						name: "isNaN",
 						message: `Use Number.isNaN instead. isNaN does not check the input is of type number, and instead coerces input into a number.
-isNaN("foo"); // true
-Number.isNaN("foo"); // false`,
+	isNaN("foo"); // true
+	Number.isNaN("foo"); // false`,
 					},
 					{
 						name: "Boolean",
@@ -142,8 +151,8 @@ Number.isNaN("foo"); // false`,
 						object: "Number",
 						property: "parseInt",
 						message: `Use Number() to convert strings to numbers. parseInt is very liberal with what it considers a number.
-Number("4f") // NaN
-parseInt("4helloworld") // 4`,
+	Number("4f") // NaN
+	parseInt("4helloworld") // 4`,
 					},
 				],
 				"no-restricted-syntax": [
@@ -372,6 +381,8 @@ parseInt("4helloworld") // 4`,
 	{
 		rules: {
 			indent: ["error", "tab"],
+			"hagemanto/case-blocks": "error",
+			"hagemanto/no-instanceof": "error",
 		},
 	},
-];
+]
