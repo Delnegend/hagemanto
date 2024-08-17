@@ -1,10 +1,9 @@
-const hagemanto = require("./lib/index.js").default;
+import hagemanto from "./lib/index.js";
 
-module.exports = [
-	{ files: ["src/*.*"] },
-	{ ignores: ["lib/*.*", "tsconfig.json", "eslint.config.js"] },
+export default [
+	{ files: ["test.ts" ] },
+	{ ignores: ["eslint.config.js", "lib/index.js", "lib/rules.js"] },
 
 	...hagemanto,
-
 	{ languageOptions: { parserOptions: { project: "./tsconfig.json" } } },
 ];

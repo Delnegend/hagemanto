@@ -14,12 +14,6 @@ importers:
       '@stylistic/eslint-plugin-ts':
         specifier: ^2.6.2
         version: 2.6.2(eslint@9.9.0)(typescript@5.5.4)
-      '@types/eslint__js':
-        specifier: ^8.42.3
-        version: 8.42.3
-      '@types/estree':
-        specifier: ^1.0.5
-        version: 1.0.5
       '@typescript-eslint/utils':
         specifier: ^8.1.0
         version: 8.1.0(eslint@9.9.0)(typescript@5.5.4)
@@ -29,16 +23,10 @@ importers:
       eslint-plugin-prettier:
         specifier: ^5.2.1
         version: 5.2.1(@types/eslint@9.6.0)(eslint-config-prettier@9.1.0(eslint@9.9.0))(eslint@9.9.0)(prettier@3.2.5)
-      typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
       typescript-eslint:
         specifier: ^8.1.0
         version: 8.1.0(eslint@9.9.0)(typescript@5.5.4)
     devDependencies:
-      '@types/eslint':
-        specifier: ^9.6.0
-        version: 9.6.0
       eslint:
         specifier: ^9.9.0
         version: 9.9.0
@@ -109,9 +97,6 @@ packages:
 
   '@types/eslint@9.6.0':
     resolution: {integrity: sha512-gi6WQJ7cHRgZxtkQEoyHMppPjq9Kxo5Tjn2prSKDSmZrCz8TZ3jSRCeTJm+WoM+oB0WG37bRqLzaaU3q7JypGg==}
-
-  '@types/eslint__js@8.42.3':
-    resolution: {integrity: sha512-alfG737uhmPdnvkrLdZLcEKJ/B8s9Y4hrZ+YAdzUeoArBlSUERA2E87ROfOaS4jd/C45fzOoZzidLc1IPwLqOw==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -682,10 +667,6 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.5
       '@types/json-schema': 7.0.15
-
-  '@types/eslint__js@8.42.3':
-    dependencies:
-      '@types/eslint': 9.6.0
 
   '@types/estree@1.0.5': {}
 
