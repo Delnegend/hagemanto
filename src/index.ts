@@ -4,7 +4,7 @@ import prettier from "eslint-plugin-prettier/recommended";
 import tseslint from "typescript-eslint";
 import { CaseBlocks, NoInstanceof } from "./rules.js";
 
-export default [
+const config: Array<any> = [
 	{
 		plugins: {
 			hagemanto: {
@@ -254,6 +254,7 @@ export default [
 				// "@typescript-eslint/naming-convention"
 				"@typescript-eslint/no-dupe-class-members": "off", // handled by TS
 				"@typescript-eslint/no-empty-interface": "error",
+				"@typescript-eslint/no-explicit-any": "warn",
 				// TODO: disable this rule when eslint-plugin-import migrates
 				"@typescript-eslint/no-import-type-side-effects": "error",
 				"@typescript-eslint/no-loop-func": "error",
@@ -386,3 +387,5 @@ export default [
 		},
 	},
 ];
+
+export default config;
