@@ -31,11 +31,7 @@ import hagemanto from "eslint-plugin-hagemanto";
 
 export default [
     // ...
-	...hagemanto({
-        typescript: false, // to disable `typescript-eslint`
-        stylisticTs: false, // to disable `@stylistic/eslint-plugin-ts`
-        // etc...
-    }),
+	...hagemanto(), // or ...hagemanto({ enablePrettier: true }) to enable prettier
     // ,,,
 ]
 ```
