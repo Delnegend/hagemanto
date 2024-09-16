@@ -1,6 +1,6 @@
 {
 	"name": "eslint-plugin-hagemanto",
-	"version": "2.1.1",
+	"version": "2.1.2",
 	"type": "module",
 	"homepage": "https://github.com/Delnegend/hagemanto",
 	"scripts": {
@@ -14,14 +14,14 @@
 		"eslint": "^9.9.0"
 	},
 	"dependencies": {
-		"@eslint/js": "^9.9.0",
-		"@stylistic/eslint-plugin-ts": "^2.6.2",
-		"@typescript-eslint/utils": "^8.1.0",
+		"@eslint/js": "^9.10.0",
+		"@stylistic/eslint-plugin-ts": "^2.8.0",
+		"@typescript-eslint/utils": "^8.5.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-prettier": "^5.2.1",
-		"typescript-eslint": "^8.1.0"
+		"typescript-eslint": "^8.5.0"
 	},
 	"devDependencies": {
-		"eslint": "^9.9.0"
+		"eslint": "^9.10.0"
 	}
 }
