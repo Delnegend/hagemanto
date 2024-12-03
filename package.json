@@ -1,6 +1,6 @@
 {
 	"name": "eslint-plugin-hagemanto",
-	"version": "2.2.6",
+	"version": "3.0.0",
 	"type": "module",
 	"homepage": "https://github.com/Delnegend/hagemanto",
 	"scripts": {
@@ -19,6 +19,7 @@
 		"@typescript-eslint/utils": "^8.17.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-prettier": "^5.2.1",
+		"eslint-plugin-simple-import-sort": "^12.1.1",
 		"typescript-eslint": "^8.17.0"
 	},
 	"devDependencies": {
