@@ -31,10 +31,11 @@ import hagemanto from "eslint-plugin-hagemanto";
 
 export default [
     // ...
-	...hagemanto({
-        enablePrettier = false,
+    ...hagemanto({
+        styler = "stylistic",
         enableJsx = true,
         enableTs = true,
+        sortImports = true,
     }), // or just `...hagemanto()` if this is what you're using
     // ,,,
 ]
