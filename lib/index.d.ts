@@ -2,7 +2,7 @@ export interface HagemantoOptions {
     /**
      * Use prettier or stylistic for code styling
      *
-     * Default: `undefined` (disabled)
+     * Default: `stylistic`
      */
     styler?: "prettier" | "stylistic"
 
