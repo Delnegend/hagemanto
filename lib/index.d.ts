@@ -14,13 +14,6 @@ export interface HagemantoOptions {
     enableJsx?: boolean
 
     /**
-     * Enable Vue support
-     *
-     * Default: false
-     */
-    enableVue?: boolean
-
-    /**
      * Enable typescript support
      *
      * Default: true
