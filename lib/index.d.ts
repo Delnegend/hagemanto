@@ -2,35 +2,35 @@ export interface HagemantoOptions {
     /**
      * Use prettier or stylistic for code styling
      *
-     * Default: undefined
+     * Default: `undefined` (disabled)
      */
     styler?: "prettier" | "stylistic"
 
     /**
      * Enable JSX support
      *
-     * Default: true
+     * Default: `true`
      */
     enableJsx?: boolean
 
     /**
      * Enable typescript support
      *
-     * Default: true
+     * Default: `true`
      */
     enableTs?: boolean
 
     /**
      * Enable tailwind support
      *
-     * Default: true
+     * Default: `true`
      */
     enableTailwind?: boolean
 
     /**
      * Enable sorting imports
      *
-     * Default: true
+     * Default: `true`
      */
     sortImports?: boolean
 
@@ -39,14 +39,14 @@ export interface HagemantoOptions {
      *
      * https://typescript-eslint.io/getting-started/typed-linting/
      *
-     * Default: true
+     * Default: `true`
      */
     enableDefaultLanguageOptions?: boolean
 
     /**
      * The `extraFileExtensions` in `laguageOptions.parserOptions`
      *
-     * Default: []
+     * Default: `[]`
      */
     extraFileExtensions?: string[]
 }
