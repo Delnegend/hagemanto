@@ -21,6 +21,8 @@ export default [
         enableTs = true,
         enableTailwind: true,
         sortImports = true,
+        enableDefaultLanguageOptions = true,
+        extraFileExtensions = [],
     }), // or just `...hagemanto()` if this is what you're using
     // ,,,
 ]
