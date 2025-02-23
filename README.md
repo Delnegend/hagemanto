@@ -41,8 +41,7 @@ import vue from "eslint-plugin-vue";
 
 export default [
     // ...
-    ...vue.configs["flat/recommended"],
-    ...hagemanto({ enableVue: true }),
+    ..hagemanto({ vueConfig: vue.configs["flat/recommended"] })
     // ...
 ]
 ```

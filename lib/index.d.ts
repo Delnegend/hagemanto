@@ -1,3 +1,5 @@
+import { Linter } from "eslint"
+
 export interface HagemantoOptions {
     /**
      * Use prettier or stylistic for code styling
@@ -30,9 +32,9 @@ export interface HagemantoOptions {
     /**
      * Enable vue custom rules, requires [eslint-plugin-vue](https://eslint.vuejs.org/)
      *
-     * Default: `false`
+     * Default: `undefined`
      */
-    enableVue?: boolean
+    vueConfig?: Linter.FlatConfig[]
 
     /**
      * Enable sorting imports

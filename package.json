@@ -1,6 +1,6 @@
 {
 	"name": "eslint-plugin-hagemanto",
-	"version": "4.0.1",
+	"version": "5.0.0",
 	"type": "module",
 	"homepage": "https://github.com/Delnegend/hagemanto",
 	"scripts": {
