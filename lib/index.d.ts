@@ -28,6 +28,13 @@ export interface HagemantoOptions {
     enableTailwind?: boolean
 
     /**
+     * Enable vue custom rules, requires [eslint-plugin-vue](https://eslint.vuejs.org/)
+     *
+     * Default: `false`
+     */
+    enableVue?: boolean
+
+    /**
      * Enable sorting imports
      *
      * Default: `true`
@@ -43,12 +50,6 @@ export interface HagemantoOptions {
      */
     enableDefaultLanguageOptions?: boolean
 
-    /**
-     * The `extraFileExtensions` in `laguageOptions.parserOptions`
-     *
-     * Default: `[]`
-     */
-    extraFileExtensions?: string[]
 }
 
 declare function hagemanto(options?: HagemantoOptions): Array<any>
