@@ -1,0 +1,11 @@
+{
+	"name": "hagemanto",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+		"-v",
+		"global-pnpm-store:/home/hagemanto/.pnpm-store"
+	],
+	"postCreateCommand": "zsh .devcontainer/postinstall.sh"
+}
